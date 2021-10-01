@@ -40,7 +40,7 @@ public class RemarkCommand extends Command {
 
         model.setPerson(personToRemark, remarkedPerson);
         model.updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
-        return new CommandResult("Edited at index" + index + "with remark" + this.remark);
+        return new CommandResult("Edited at index " + index + " with remark " + this.remark);
     }
 
     private static Person createRemarkedPerson(Person personToEdit, String remark) {

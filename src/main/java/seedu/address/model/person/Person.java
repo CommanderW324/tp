@@ -103,7 +103,7 @@ public class Person {
                 && otherPerson.getPhone().equals(getPhone())
                 && otherPerson.getEmail().equals(getEmail())
                 && otherPerson.getAddress().equals(getAddress())
-                && otherPerson.getTags().equals(getTags());
+                && otherPerson.getTags().equals(getTags()) && otherPerson.getRemark().equals(getRemark());
     }
 
     @Override
@@ -128,6 +128,7 @@ public class Person {
             builder.append("; Tags: ");
             tags.forEach(builder::append);
         }
+        builder.append("; Remark: ").append(getRemark());
         return builder.toString();
     }
 
