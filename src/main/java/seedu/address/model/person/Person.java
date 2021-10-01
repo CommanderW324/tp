@@ -37,6 +37,10 @@ public class Person {
         this.tags.addAll(tags);
         this.remark = remark;
     }
+
+    /**
+     * Remark field is not specified and thus will be empty
+     */
     public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, tags);
         this.name = name;
@@ -61,7 +65,9 @@ public class Person {
     public Address getAddress() {
         return address;
     }
-    public Remark getRemark() {return remark;}
+    public Remark getRemark() {
+        return remark;
+    }
 
     /**
      * Returns an immutable tag set, which throws {@code UnsupportedOperationException}

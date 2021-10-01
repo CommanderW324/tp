@@ -1,12 +1,16 @@
 package seedu.address.model.person;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.address.commons.util.AppUtil.checkArgument;
+
 
 public class Remark {
     public static final String MESSAGE_CONSTRAINTS = "Addresses can take any values, and it should not be blank";
     public final String value;
 
+    /**
+     * Constructor for remark class
+     * @param remark
+     */
     public Remark(String remark) {
         requireNonNull(remark);
         this.value = remark;

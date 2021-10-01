@@ -52,7 +52,7 @@ public class Index {
                 && zeroBasedIndex == ((Index) other).zeroBasedIndex); // state check
     }
     @Override
-    public String toString(){
+    public String toString() {
         return "" + this.zeroBasedIndex;
     }
 }
