@@ -352,12 +352,14 @@ Action | Format, Examples
 **Alias** | `alias EXISTING_COMMAND YOUR_ALIAS`<br> e.g., `alias tagall tag -A`
 **Clear** | `clear`
 **Delete** | `delete INDEX`<br> e.g., `delete 3`
+**Delete Alias** | `deletealias YOUR_ALIAS` <br> e.g., `deletealias tag -A`
 **Edit** | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [g/GITHUB_USERNAME] [l/LINKEDIN] [d/DETAIL] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
 **Find** | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
 **Help** | `help`
 **List** | `list`
 **Replace tag** | `replacetag TAG1 TAG2`<br> e.g., `replacetag friend enemy`
 **Show tags** | `showtags`
+**Show Alias** | `showalias`
 **Tag** | `tag INDEXES TAG` <br> e.g., `tag 1 2 programmer`
 **Tag all** | `tagall TAG` <br> e.g., `tagall programmer`
 **Untag** | `untag INDEXES TAG`<br> e.g., `untag 1 2 friend`
