@@ -49,7 +49,8 @@ public class AliasTableDisplayWindow extends UiPart<Stage> {
      * Fill the table with given hashmap
      */
     public void fillTable(HashMap<String, String> aliasTable) {
-        //Code Reuse from tutorial
+        //@@author CommanderW324-reused
+        //Code Reuse adapted from tutorial of http://tutorials.jenkov.com/javafx/tableview.html
         TableColumn<Map.Entry<String, String>, String> col1 = new TableColumn<> ("Alias");
 
         col1.setCellValueFactory((
@@ -66,6 +67,7 @@ public class AliasTableDisplayWindow extends UiPart<Stage> {
         aliasTableView.setItems(items);
         aliasTableView.getColumns().add(col1);
         aliasTableView.getColumns().add(col2);
+        //@@author
     }
 
     /**
